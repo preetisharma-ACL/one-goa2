@@ -1418,3 +1418,64 @@ body {
 .custom-submit-btn:hover {
   background: #ccb25c;
 }
+
+/* ========= Mobile Sticky Bottom CTA ========= */
+.mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 12px;
+  z-index: 9999;
+  /* premium background */
+  background: #fff;
+  backdrop-filter: blur(12px);
+}
+
+/* buttons base */
+.mobile-cta .cta-btn {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  padding: 12px 10px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: 0.25s ease;
+}
+
+/* Brochure button */
+.mobile-cta .cta-brochure {
+  background: #0b2b4d;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Enquire button */
+.mobile-cta .cta-enquire {
+  background: #ab7f30;
+  /* yellow */
+  color: #1a1a1a;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* hover effect */
+.mobile-cta .cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* click effect */
+.mobile-cta .cta-btn:active {
+  transform: scale(0.98);
+}
+
+/* show only on mobile */
+@media (min-width: 768px) {
+  .mobile-cta {
+    display: none !important;
+  }
+}
